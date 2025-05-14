@@ -1,4 +1,4 @@
-# 📁 SAÉ 5.02 – Piloter un projet informatique
+# 📦 SAÉ 5.02 – Piloter un projet informatique
 
 Bienvenue dans cette section dédiée à la SAÉ 5.02, un projet collaboratif réalisé à l’automne 2024 dans le cadre du BUT RT 3.
 
@@ -15,46 +15,52 @@ Les principaux objectifs sont :
 
 ## ⚙️ Sujet du projet
 
-## 🔴 Partie 1 - Red Team : Attaque
+**Développer une application de todo-list en Python**, comportant les fonctionnalités suivantes :
+- Création et gestion de tâches et sous-tâches
+- Affectation de tâches
+- Sauvegarde (via Git ou serveur web)
+- Gestion de dates limites, priorités et étiquettes
+- Déploiement via une image Docker
 
-Nous avons été chargés de simuler une attaque sur un système vulnérable, en exploitant la faille **Log4Shell (CVE-2021-44228)**.
+## 🛠️ Méthodologie et outils
 
-**Objectifs :**
+- Gestion de projet : **SCRUM**
+- Outils :
+  - 🗂️ Trello (tableau de suivi)
+  - 🐍 GitHub (dépôt du code)
+  - 🧪 PyTest (tests unitaires)
+  - 📝 Sphinx (documentation)
+  - 📦 Conda (environnement de développement)
+  - 🐳 Docker (conteneurisation)
 
-- Identifier les points faibles du système
-- Exploiter la vulnérabilité
-- Documenter les étapes de l'attaque
-- Évaluer l'impact de cette faille critique
+## 📁 Contenu du dépôt
 
-## 🔵 Partie 2 – Blue Team : Détection
+- Un [Code]() incluant :
+  - *Le projet complet*.
+  - *L'environnement conda (fichier yml)*.
+- Une [documentation utilisateur]() incluant :
+  - *L'installation*.
+  - *L'utilisation*.
+- Une [documentation technique]() (pour développeur).
+- Une [Image Docker]() permettant de le lancer.
+- Un [Rapport]() expliquant votre fonctionnement du point de vue de la gestion de projets
 
-Nous avons ensuite adopté une posture défensive visant à détecter et analyser l'attaque simulée.
+## 🗓️ Organisation
 
-**Objectifs :**
+- Travail en groupe de 7 à 8 personnes
+- Rôles :
+  - 1 Product Owner / Chef de projet
+  - 1 Scrum Master
+  - Développeurs
+- Communication du nom du projet, rôles et membres par email à l'enseignant
+- Ajout de l'enseignant sur Trello et Github
 
-- Implémenter un **SIEM** (Splunk, Wazuh ou ELK)
-- Surveiller l'activité réseau et système
-- Analyser les logs liés à l'exploitation de Log4j
-- Comprendre les mécanismes de détection et d'alerte
+📅 **Date de rendu** : 22 décembre 2024 à 23h55 sur Moodle
 
-## 📂 Contenu
+## ✅ Évaluation
 
-- Un [Rapport](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_6.Cyber.01/Rapport_SAE_6.Cyber.01_Rubio_Thomas_Breinlen_Marius.pdf).
-- Un support de [Présentation](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_6.Cyber.01/Support_Pr%C3%A9sentation_SAE_6.Cyber.01_Rubio_Thomas_Breinlen_Marius.pdf).
-- Une [Vidéo](https://youtu.be/BF5g49u0Wos) de démonstration.
+- Qualité du produit final
+- Qualité du code (respect PEP8, bonnes pratiques)
+- Investissement individuel (évalué par les pairs)
+- Utilisation pertinente des outils de gestion de projet
 
-## 📅 Délai & Modalités
-
-- 📆 **Date de rendu** : vendredi 21 mars 2025 à 23h59
-- ✅ Un seul rendu par groupe (rapport + présentation + URL vidéo)
-- 🧑‍🤝‍🧑 Tous les noms et prénoms des membres du groupe doivent apparaître :
-  - Sur la page de garde du rapport
-  - Sur la première slide de la présentation
-  - Dans les champs associés à la vidéo
-
-## 🎯 Compétences mobilisées
-
-- 🔐 Exploitation de vulnérabilités (pentest)
-- 🖥️ Mise en place de systèmes de surveillance
-- 📊 Analyse de logs et corrélation d’événements
-- 📚 Rédaction technique et restitution orale
