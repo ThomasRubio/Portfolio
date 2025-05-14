@@ -33,8 +33,8 @@ Nous avons ensuite adopté une posture défensive visant à détecter et analyse
 
 ## 📂 Contenu
 
-- Un [Rapport]().
-- Un support de [Présentation]().
+- Un [Rapport](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_6.Cyber.01/Rapport_SAE_6.Cyber.01_Rubio_Thomas_Breinlen_Marius.pdf).
+- Un support de [Présentation](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_6.Cyber.01/Support_Pr%C3%A9sentation_SAE_6.Cyber.01_Rubio_Thomas_Breinlen_Marius.pdf).
 - Une [Vidéo](https://youtu.be/BF5g49u0Wos) de démonstration.
 
 ## 📅 Délai & Modalités
