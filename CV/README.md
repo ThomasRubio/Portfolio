@@ -1,6 +1,6 @@
 # 📄 CV
 
-Bienvenue dans ce dossier dédié à mes CV.
+Bienvenue dans ce dossier dédié à mes **CV**.
 
 Vous trouverez ici plusieurs versions de mon curriculum vitae.
 
