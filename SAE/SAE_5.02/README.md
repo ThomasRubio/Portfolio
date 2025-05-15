@@ -35,15 +35,15 @@ Les principaux objectifs sont :
 
 ## 📁 Contenu du dépôt
 
-- Un [Code]() incluant :
+- Un [Code](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/Code) incluant :
   - *Le projet complet*.
   - *L'environnement conda (fichier yml)*.
-- Une [documentation utilisateur]() incluant :
+- Une [documentation utilisateur](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/Code/docs/Documentation_utilisateur_Todoux.pdf) incluant :
   - *L'installation*.
   - *L'utilisation*.
-- Une [documentation technique]() (pour développeur).
-- Une [Image Docker]() permettant de le lancer.
-- Un [Rapport]() expliquant votre fonctionnement du point de vue de la gestion de projets
+- Une [documentation technique](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/Code/docs/Documentation_technique_todoux.pdf) (pour développeur).
+- Une [Image Docker](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/Code/installation.sh) permettant de le lancer.
+- Un [Rapport](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/Code/docs/Rapport_gestion_projet.pdf) expliquant votre fonctionnement du point de vue de la gestion de projets
 
 ## 🗓️ Organisation
 
