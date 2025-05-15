@@ -64,6 +64,29 @@ Les principaux objectifs sont :
 - Investissement individuel (évalué par les pairs)
 - Utilisation pertinente des outils de gestion de projet
 
+## 🧠 Apprentissages critiques
+
+- **AC31.02Cyber** : Réaliser la documentation technique de ce projet
+- **AC31.03Cyber** : Réaliser une maquette de démonstration du projet
+- **AC31.04Cyber** : Défendre/argumenter un projet
+- **AC31.05Cyber** : Communiquer avec les acteurs du projet
+- **AC31.06Cyber** : Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais
+- **AC32.05Cyber** : Collaborer en mode projet en français et en anglais
+- **AC33.01Cyber** : Élaborer les spécifications techniques et le cahier des charges d’une application informatique
+- **AC33.02Cyber** : Mettre en place un environnement de travail collaboratif
+- **AC33.03Cyber** : Participer à la formation des utilisateurs
+- **AC33.04Cyber** : Déployer et maintenir une solution informatique
+- **AC33.05Cyber** : S’informer sur les évolutions et les nouveautés technologiques
+- **AC33.06Cyber** : Sécuriser l’environnement numérique d’une application
+ 
+## 📚 Ressources mobilisées et combinées
+
+- **[R5.04](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.04/README.md)** :  Cycle de vie d’un projet informatique
+- **[R5.05](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.05/README.md)** : Anglais : Insertion professionnelle 1
+- **[R5.06](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.06/README.md)** : Expression-Culture-Communication professionnelles : S’intégrer dans une organisation
+- **[R5.07](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.07/README.md)** : Projet Personnel et Professionnel
+- **[R5.08](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.08/README.md)** : Gestion de projets 3 : Mener un projet professionnel
+
 ## ← Retour
 
 [📚 SAE - Situations D'appentissage et d'Évaluation](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)
