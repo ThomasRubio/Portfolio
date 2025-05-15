@@ -5,6 +5,19 @@ Bienvenue dans cette section dédiée à mes SAE réalisées dans le cadre de ma
 Vous trouverez ici différents projets pédagoqiques développés au fil de mes semestres, illustrant mes compétences en réseaux, systèmes, programmation, cybersécurité et gestion de projet.
 
 ## 📂 Contenu
+- **Semestre 3**
+
+[SAE 3.01 : Mettre en oeuvre un système de transmission](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.01).
+
+SAE 3.02 : Développer des applications communicantes.
+
+[SAE 3.Cyber.03 : Concevoir un réseau informatique sécurisé multi-sites](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.03).
+
+SAE 3.Cyber.04 :  Découvrir le pentesting.
+
+- **Semestre 4**
+
+[SAE 4.Cyber.01 : Sécuriser un système d’information](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_4.Cyber.01).
 
 - **Semestre 5**
 
