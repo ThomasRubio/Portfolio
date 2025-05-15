@@ -1,0 +1,141 @@
+[
+    {
+        "id": "gps-tracking",
+        "type": "tab",
+        "label": "GPS Tracking",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "json-parse",
+        "type": "json",
+        "z": "gps-tracking",
+        "name": "Parse JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 450,
+        "y": 160,
+        "wires": [
+            [
+                "ws-out"
+            ]
+        ]
+    },
+    {
+        "id": "map-endpoint",
+        "type": "http in",
+        "z": "gps-tracking",
+        "name": "GET /tracking-map",
+        "url": "/tracking-map",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "map-template"
+            ]
+        ]
+    },
+    {
+        "id": "map-template",
+        "type": "template",
+        "z": "gps-tracking",
+        "name": "Interactive Map Page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "html",
+        "syntax": "mustache",
+        "template": "<!--\n/******************************************************************\n* Suivi de Véhicule - Interface Web\n* ================================\n* \n* Description:\n* ------------\n* Interface web pour le suivi en temps réel d'un véhicule avec\n* affichage sur une carte interactive OpenStreetMap.\n*\n* Fonctionnalités:\n* ---------------\n* 1. Suivi en temps réel\n*    - Affichage de la position actuelle\n*    - Tracé du parcours\n*    - Calcul de la distance parcourue\n*\n* 2. Gestion des points d'intérêt\n*    - Ajout de points sur la carte\n*    - Suppression des points (dernier ou tous)\n*\n* 3. Mesure de distances\n*    - Placement de points de mesure\n*    - Calcul des distances entre points\n*    - Suppression des points de mesure\n*\n* 4. Import/Export\n*    - Export du trajet au format JSON\n*    - Import d'un trajet depuis un fichier JSON\n*    - Sauvegarde locale des trajets\n*    - Historique des trajets sauvegardés\n*\n* Configuration:\n* -------------\n* - Connexion WebSocket : ws://adresse-ip:1880/ws/gps\n* - Format des données GPS attendues : \n*   {latitude: number, longitude: number} ou {lat: number, lon: number}\n*\n* Utilisation avec Node-RED:\n* ------------------------\n* 1. Nœuds nécessaires:\n*    - http in (GET /tracking-map)\n*    - template (ce code)\n*    - http response\n*    - websocket in/out (/ws/gps)\n*\n* 2. Paramètres par défaut:\n*    - Centré sur Colmar : [48.0833, 7.3557]\n*    - Zoom initial : 13\n*\n* Auteur: [Votre nom]\n* Date: [Date]\n* Version: 1.0\n******************************************************************/\n-->\n<!DOCTYPE html>\n<html>\n\n<head>\n    <title>Suivi Véhicule - IUT Colmar</title>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css\" />\n    <style>\n        body {\n            margin: 0;\n            padding: 0;\n        }\n\n        #map {\n            height: 100vh;\n            width: 100%;\n        }\n\n        .control-panel {\n            position: absolute;\n            top: 10px;\n            right: 10px;\n            z-index: 1000;\n            background: white;\n            padding: 10px;\n            border-radius: 4px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n            max-width: 300px;\n        }\n\n        .info-panel {\n            position: absolute;\n            bottom: 20px;\n            left: 10px;\n            z-index: 1000;\n            background: white;\n            padding: 10px;\n            border-radius: 4px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n        }\n\n        .history-panel {\n            position: absolute;\n            top: 10px;\n            left: 10px;\n            z-index: 1000;\n            background: white;\n            padding: 10px;\n            border-radius: 4px;\n            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\n            max-height: 60vh;\n            overflow-y: auto;\n            min-width: 200px;\n        }\n\n        button {\n            margin: 5px;\n            padding: 5px 10px;\n            border-radius: 4px;\n            border: 1px solid #ccc;\n            cursor: pointer;\n            display: block;\n            width: 100%;\n        }\n\n        button:hover {\n            background-color: #eee;\n        }\n\n        .measurement-info {\n            margin-top: 10px;\n            padding: 5px;\n            background: #f0f0f0;\n            border-radius: 4px;\n        }\n\n        .file-input-container {\n            position: relative;\n            overflow: hidden;\n            display: inline-block;\n            width: 100%;\n        }\n\n        .file-input-container input[type=file] {\n            font-size: 100px;\n            position: absolute;\n            left: 0;\n            top: 0;\n            opacity: 0;\n            cursor: pointer;\n        }\n\n        /* Style pour l'historique */\n        .history-item {\n            padding: 8px;\n            margin: 5px 0;\n            background: #f5f5f5;\n            border-radius: 4px;\n            cursor: pointer;\n            transition: background-color 0.2s;\n        }\n\n        .history-item:hover {\n            background: #e0e0e0;\n        }\n    </style>\n</head>\n\n<body>\n    <div id=\"map\"></div>\n\n    <!-- Panneau de contrôle -->\n    <div class=\"control-panel\">\n        <button onclick=\"toggleTracking()\" id=\"trackingBtn\">Démarrer/Arrêter le suivi</button>\n        <button onclick=\"clearPath()\">Effacer le trajet</button>\n        <button onclick=\"centerOnVehicle()\">Centrer sur le véhicule</button>\n        <button onclick=\"toggleMarkerPlacement()\" id=\"markerBtn\">Placer des points</button>\n        <button onclick=\"deleteLastMarker()\">Supprimer dernier point</button>\n        <button onclick=\"clearAllMarkers()\">Supprimer tous les points</button>\n        <button onclick=\"toggleDistanceMeasurement()\" id=\"measureBtn\">Mesurer des distances</button>\n        <button onclick=\"deleteLastMeasurePoint()\" id=\"deleteLastMeasureBtn\" style=\"display: none;\">Supprimer dernier point de mesure</button>\n        <button onclick=\"clearMeasurements()\" id=\"clearMeasureBtn\" style=\"display: none;\">Supprimer toutes les mesures</button>\n        <button onclick=\"exportPath()\">Exporter le trajet</button>\n        <div class=\"file-input-container\">\n            <button>Importer un trajet</button>\n            <input type=\"file\" accept=\".json\" onchange=\"importPath(event)\">\n        </div>\n        <button onclick=\"saveCurrentTraject()\">Sauvegarder ce trajet</button>\n        <div id=\"measurement-info\" class=\"measurement-info\" style=\"display: none;\">\n            Distance mesurée: <span id=\"measure-distance\">0 m</span>\n        </div>\n    </div>\n\n    <!-- Panneau d'historique -->\n    <div class=\"history-panel\">\n        <h3>Historique des trajets</h3>\n        <div id=\"history-list\"></div>\n    </div>\n\n    <!-- Panneau d'informations -->\n    <div class=\"info-panel\">\n        <div>Position actuelle: <span id=\"current-pos\">-</span></div>\n        <div>Distance parcourue: <span id=\"total-distance\">0 km</span></div>\n        <div>Dernière mise à jour: <span id=\"last-update\">-</span></div>\n    </div>\n\n    <script src=\"https://unpkg.com/leaflet@1.7.1/dist/leaflet.js\"></script>\n    <script>\n        /**\n         * Initialisation de la carte\n         * Centre par défaut : Colmar [48.0833, 7.3557]\n         */\n        var map = L.map('map').setView([48.0833, 7.3557], 13);\n        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {\n            maxZoom: 19,\n            attribution: '© OpenStreetMap contributors'\n        }).addTo(map);\n\n        // Variables globales\n        var marker = null;\n        var path = L.polyline([], {color: 'red'}).addTo(map);\n        var positions = [];\n        var customMarkers = [];\n        var measurementMarkers = [];\n        var measurementLines = [];\n        var isTracking = true;\n        var isPlacingMarkers = false;\n        var isMeasuringDistance = false;\n        var totalDistance = 0;\n\n        // WebSocket pour la réception des données GPS\n        var ws = new WebSocket('ws://' + window.location.host + '/ws/gps');\n\n        ws.onmessage = function(event) {\n            if (!isTracking) return;\n            \n            var data = JSON.parse(event.data);\n            var lat = parseFloat(data.latitude || data.lat);\n            var lon = parseFloat(data.longitude || data.lon);\n            updatePosition(lat, lon);\n        };\n\n        /**\n         * Active/désactive le suivi en temps réel\n         */\n        function toggleTracking() {\n            isTracking = !isTracking;\n            document.getElementById('trackingBtn').textContent = \n                isTracking ? \"Arrêter le suivi\" : \"Démarrer le suivi\";\n        }\n\n        /**\n         * Efface le trajet actuel et réinitialise les compteurs\n         */\n        function clearPath() {\n            if (path) {\n                map.removeLayer(path);\n            }\n            positions = [];\n            totalDistance = 0;\n            path = L.polyline([], {color: 'red'}).addTo(map);\n            document.getElementById('total-distance').textContent = '0 km';\n        }\n\n        /**\n         * Centre la carte sur la position actuelle du véhicule\n         */\n        function centerOnVehicle() {\n            if (marker) {\n                map.setView(marker.getLatLng(), map.getZoom());\n            }\n        }\n\n        /**\n         * Active/désactive le mode placement de points\n         */\n        function toggleMarkerPlacement() {\n            isPlacingMarkers = !isPlacingMarkers;\n            isMeasuringDistance = false;\n            document.getElementById('markerBtn').textContent = \n                isPlacingMarkers ? \"Arrêter de placer des points\" : \"Placer des points\";\n            document.getElementById('measureBtn').textContent = \"Mesurer des distances\";\n            document.getElementById('deleteLastMeasureBtn').style.display = 'none';\n            document.getElementById('clearMeasureBtn').style.display = 'none';\n            \n            if (isPlacingMarkers) {\n                map.on('click', addCustomMarker);\n                map.off('click', addMeasurementPoint);\n            } else {\n                map.off('click', addCustomMarker);\n            }\n        }\n\n        /**\n         * Active/désactive le mode mesure de distance\n         */\n        function toggleDistanceMeasurement() {\n            isMeasuringDistance = !isMeasuringDistance;\n            isPlacingMarkers = false;\n            \n            document.getElementById('measureBtn').textContent = \n                isMeasuringDistance ? \"Arrêter la mesure\" : \"Mesurer des distances\";\n            document.getElementById('markerBtn').textContent = \"Placer des points\";\n            document.getElementById('measurement-info').style.display = \n                isMeasuringDistance ? 'block' : 'none';\n            document.getElementById('deleteLastMeasureBtn').style.display = \n                isMeasuringDistance ? 'block' : 'none';\n            document.getElementById('clearMeasureBtn').style.display = \n                isMeasuringDistance ? 'block' : 'none';\n\n            if (isMeasuringDistance) {\n                map.on('click', addMeasurementPoint);\n                map.off('click', addCustomMarker);\n            } else {\n                map.off('click', addMeasurementPoint);\n            }\n        }\n\n        /**\n         * Ajoute un marqueur personnalisé sur la carte\n         */\n        function addCustomMarker(e) {\n            var marker = L.marker(e.latlng).addTo(map);\n            customMarkers.push(marker);\n        }\n\n        /**\n         * Supprime le dernier marqueur ajouté\n         */\n        function deleteLastMarker() {\n            if (customMarkers.length > 0) {\n                var marker = customMarkers.pop();\n                map.removeLayer(marker);\n            }\n        }\n\n        /**\n         * Supprime tous les marqueurs de la carte\n         */\n        function clearAllMarkers() {\n            customMarkers.forEach(marker => map.removeLayer(marker));\n            customMarkers = [];\n        }\n\n        /**\n         * Ajoute un point de mesure sur la carte\n         */\n        function addMeasurementPoint(e) {\n            var marker = L.marker(e.latlng).addTo(map);\n            measurementMarkers.push(marker);\n\n            if (measurementMarkers.length > 1) {\n                var line = L.polyline([\n                    measurementMarkers[measurementMarkers.length - 2].getLatLng(),\n                    measurementMarkers[measurementMarkers.length - 1].getLatLng()\n                ], {color: 'blue', dashArray: '5, 10'}).addTo(map);\n                measurementLines.push(line);\n            }\n            updateMeasurementDistance();\n        }\n\n        /**\n         * Supprime le dernier point de mesure\n         */\n        function deleteLastMeasurePoint() {\n            if (measurementMarkers.length > 0) {\n                var marker = measurementMarkers.pop();\n                map.removeLayer(marker);\n\n                if (measurementLines.length > 0) {\n                    var line = measurementLines.pop();\n                    map.removeLayer(line);\n                }\n\n                updateMeasurementDistance();\n            }\n        }\n\n        /**\n         * Efface toutes les mesures de distance\n         */\n        function clearMeasurements() {\n            measurementMarkers.forEach(marker => map.removeLayer(marker));\n            measurementLines.forEach(line => map.removeLayer(line));\n            measurementMarkers = [];\n            measurementLines = [];\n            document.getElementById('measure-distance').textContent = '0 m';\n        }\n\n        /**\n         * Met à jour la distance totale mesurée\n         */\n        function updateMeasurementDistance() {\n            var distance = 0;\n            for (var i = 1; i < measurementMarkers.length; i++) {\n                distance += calculateDistance(\n                    measurementMarkers[i-1].getLatLng().lat,\n                    measurementMarkers[i-1].getLatLng().lng,\n                    measurementMarkers[i].getLatLng().lat,\n                    measurementMarkers[i].getLatLng().lng\n                );\n            }\n            document.getElementById('measure-distance').textContent = \n                distance < 1 ? `${(distance * 1000).toFixed(0)} m` : `${distance.toFixed(2)} km`;\n        }\n\n        /**\n         * Exporte le trajet actuel au format JSON\n         */\n        function exportPath() {\n            var data = {\n                positions: positions,\n                markers: customMarkers.map(m => ({\n                    lat: m.getLatLng().lat,\n                    lng: m.getLatLng().lng\n                })),\n                distance: totalDistance,\n                timestamp: new Date().toISOString()\n            };\n            \n            var blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});\n            var url = window.URL.createObjectURL(blob);\n            var a = document.createElement('a');\n            a.href = url;\n            a.download = 'trajet_' + new Date().toISOString().slice(0,19).replace(/[:]/g, '-') + '.json';\n            document.body.appendChild(a);\n            a.click();\n            document.body.removeChild(a);\n            window.URL.revokeObjectURL(url);\n        }\n\n        /**\n         * Importe un trajet depuis un fichier JSON\n         */\n        function importPath(event) {\n            const file = event.target.files[0];\n            if (!file) return;\n\n            const reader = new FileReader();\n            reader.onload = function(e) {\n                try {\n                    const data = JSON.parse(e.target.result);\n                    \n                    // Nettoyer la carte\n                    clearPath();\n                    clearAllMarkers();\n                    \n                    // Charger les positions\n                    positions = data.positions;\n                    path.setLatLngs(positions);\n                    totalDistance = data.distance;\n                    document.getElementById('total-distance').textContent = `${totalDistance.toFixed(2)} km`;\n                    \n                    // Charger les marqueurs\n                    if (data.markers) {\n                        data.markers.forEach(point => {\n                            var marker = L.marker([point.lat, point.lng]).addTo(map);\n                            customMarkers.push(marker);\n                        });\n                    }\n                    \n                    // Ajuster la vue\n                    if (positions.length > 0) {\n                        map.fitBounds(path.getBounds());\n                    }\n                } catch (error) {\n                    console.error('Erreur lors de l\\'import:', error);\n                    alert('Erreur lors de l\\'import du fichier');\n                }\n            };\n            reader.readAsText(file);\n        }\n\n        /**\n         * Sauvegarde le trajet actuel dans l'historique local\n         */\n        function saveCurrentTraject() {\n            if (positions.length === 0) {\n                alert(\"Pas de trajet à sauvegarder\");\n                return;\n            }\n            \n            var traject = {\n                id: Date.now(),\n                date: new Date().toISOString(),\n                positions: positions,\n                markers: customMarkers.map(m => ({\n                    lat: m.getLatLng().lat,\n                    lng: m.getLatLng().lng\n                })),\n                distance: totalDistance\n            };\n\n            var savedTrajects = JSON.parse(localStorage.getItem('trajectHistory') || '[]');\n            savedTrajects.push(traject);\n            localStorage.setItem('trajectHistory', JSON.stringify(savedTrajects));\n            updateHistoryList();\n        }\n\n        /**\n         * Met à jour l'affichage de l'historique des trajets\n         */\n        function updateHistoryList() {\n            var savedTrajects = JSON.parse(localStorage.getItem('trajectHistory') || '[]');\n            var historyHtml = savedTrajects.map(traject => `\n                <div class=\"history-item\" onclick=\"loadTraject(${traject.id})\">\n                    ${new Date(traject.date).toLocaleString()}<br>\n                    Distance: ${traject.distance.toFixed(2)} km\n                </div>\n            `).join('');\n            document.getElementById('history-list').innerHTML = historyHtml;\n        }\n\n        /**\n         * Charge un trajet depuis l'historique\n         */\n        function loadTraject(id) {\n            var savedTrajects = JSON.parse(localStorage.getItem('trajectHistory') || '[]');\n            var traject = savedTrajects.find(t => t.id === id);\n            if (!traject) return;\n\n            clearPath();\n            clearAllMarkers();\n\n            positions = traject.positions;\n            path.setLatLngs(positions);\n            totalDistance = traject.distance;\n            document.getElementById('total-distance').textContent = `${totalDistance.toFixed(2)} km`;\n\n            if (traject.markers) {\n                traject.markers.forEach(point => {\n                    var marker = L.marker([point.lat, point.lng]).addTo(map);\n                    customMarkers.push(marker);\n                });\n            }\n\n            map.fitBounds(path.getBounds());\n        }\n\n        /**\n         * Met à jour la position du véhicule sur la carte\n         */\n        function updatePosition(lat, lon) {\n            if (marker) {\n                map.removeLayer(marker);\n            }\n            marker = L.marker([lat, lon]).addTo(map);\n\n            positions.push([lat, lon]);\n            path.setLatLngs(positions);\n\n            if (positions.length > 1) {\n                var lastPos = positions[positions.length - 2];\n                totalDistance += calculateDistance(lastPos[0], lastPos[1], lat, lon);\n            }\n\n            document.getElementById('current-pos').textContent = `${lat.toFixed(6)}, ${lon.toFixed(6)}`;\n            document.getElementById('total-distance').textContent = `${totalDistance.toFixed(2)} km`;\n            document.getElementById('last-update').textContent = new Date().toLocaleTimeString();\n        }\n\n        /**\n         * Calcule la distance entre deux points GPS en kilomètres\n         */\n        function calculateDistance(lat1, lon1, lat2, lon2) {\n            var R = 6371; // Rayon de la Terre en km\n            var dLat = (lat2 - lat1) * Math.PI / 180;\n            var dLon = (lon2 - lon1) * Math.PI / 180;\n            var a = Math.sin(dLat/2) * Math.sin(dLat/2) +\n                    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * \n                    Math.sin(dLon/2) * Math.sin(dLon/2);\n            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));\n            return R * c;\n        }\n\n        // Initialisation de l'historique au chargement\n        updateHistoryList();\n    </script>\n</body>\n\n</html>",
+        "output": "str",
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "send-page"
+            ]
+        ]
+    },
+    {
+        "id": "send-page",
+        "type": "http response",
+        "z": "gps-tracking",
+        "name": "Send Page",
+        "statusCode": "",
+        "headers": {},
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ws-out",
+        "type": "websocket out",
+        "z": "gps-tracking",
+        "name": "WebSocket Out",
+        "server": "ws-server",
+        "client": "",
+        "x": 820,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cef4928ba375e23b",
+        "type": "mqtt in",
+        "z": "gps-tracking",
+        "name": "MQTT INPUT",
+        "topic": "titi",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "880c3f7c0cd833ea",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "json-parse"
+            ]
+        ]
+    },
+    {
+        "id": "ws-server",
+        "type": "websocket-listener",
+        "path": "/ws/gps",
+        "wholemsg": "false"
+    },
+    {
+        "id": "880c3f7c0cd833ea",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "eu1.cloud.thethings.network",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
