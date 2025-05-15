@@ -9,11 +9,11 @@ Vous trouverez ici différents projets pédagoqiques développés au fil de mes 
 
 [SAE 3.01 : Mettre en oeuvre un système de transmission](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.01/README.md).
 
-SAE 3.02 : Développer des applications communicantes.
+[SAE 3.02 : Développer des applications communicantes](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.02/README.md).
 
 [SAE 3.Cyber.03 : Concevoir un réseau informatique sécurisé multi-sites](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.03/README.md).
 
-SAE 3.Cyber.04 :  Découvrir le pentesting.
+[SAE 3.Cyber.04 :  Découvrir le pentesting](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.04/README.md).
 
 - **Semestre 4**
 
@@ -25,7 +25,7 @@ SAE 3.Cyber.04 :  Découvrir le pentesting.
 
 [SAE 5.02 : Piloter un projet informatique](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/README.md)
 
-SAE 5.Cyber.03 : Assurer la sécurisation et la supervision avancées d'un système d'information
+[SAE 5.Cyber.03 : Assurer la sécurisation et la supervision avancées d'un système d'information](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.Cyber.03/README.md).
 
 - **Semestre 6**
 
