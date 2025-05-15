@@ -19,3 +19,7 @@ tout en me permettant de découvrir un **environnement professionnel concret**.
 - **📆 Durée** : 2 mois
 - **🏢 Localisation** : 68250, Rouffach
 - **🌍 Entreprise** : Centre Hospitalier de Rouffach
+
+## ← Retour
+
+[📁 Portfolio – Thomas Rubio](https://github.com/ThomasRubio/Portfolio/blob/main/README.md)
