@@ -99,6 +99,37 @@ Arrêt du suivi sur demande utilisateur (depuis la page web) et retour en mode b
 
 - **Étape 11** : Utiliser un topic descendant par appui d'un bouton depuis la page web
 
+## 🧠 Apprentissages critiques
+
+- **AC31.01** : Concevoir un projet de réseau informatique d’une entreprise en intégrant les problématiques de haute disponibilité, de QoS, de sécurité et de supervision
+- **AC31.02** : Réaliser la documentation technique de ce projet
+- **AC31.03** : Réaliser une maquette de démonstration du projet
+- **AC31.04** : Défendre/argumenter un projet
+- **AC31.05** : Communiquer avec les acteurs du projet
+- **AC31.06** : Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais
+- **AC32.01** : Déployer un système de communication pour l’entreprise
+- **AC32.02** : Déployer un réseau d’accès sans fil pour le réseau d’entreprise en intégrant les enjeux de la sécurité
+- **AC32.03** : Déployer un réseau d’accès fixe ou mobile pour un opérateur de télécommunications en intégrant la sécurité
+- **AC32.04** : Permettre aux collaborateurs de se connecter de manière sécurisée au système d’information de l’entreprise
+- **AC32.05** : Collaborer en mode projet en français et en anglais
+- **AC33.01** : Élaborer les spécifications techniques et le cahier des charges d’une application informatique
+- **AC33.02** : Mettre en place un environnement de travail collaboratif
+- **AC33.03** : Participer à la formation des utilisateurs
+- **AC33.04** : Déployer et maintenir une solution informatique
+- **AC33.05** : S’informer sur les évolutions et les nouveautés technologiques
+- **AC33.06** : Sécuriser l’environnement numérique d’une application
+ 
+## 📚 Ressources mobilisées et combinées
+
+- **[R5.01](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.01/README.md)** : WiFi avancé
+- **[R5.02](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.02/README.md)** : Supervision des réseaux
+- **[R5.03](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.03/README.md)** : Ingénierie de systèmes télécoms
+- **[R5.04](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.04/README.md)** : Cycle de vie d’un projet informatique
+- **[R5.05](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.05/README.md)** : Anglais : Insertion professionnelle 1
+- **[R5.06](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.06/README.md)** : Expression-Culture-Communication professionnelles : S’intégrer dans une organisation
+- **[R5.07](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.07/README.md)** : Projet Personnel et Professionnel
+- **[R5.08](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.08/README.md)** : Gestion de projets 3 : Mener un projet professionnel
+
 ## ← Retour
 
 [📚 SAE - Situations D'appentissage et d'Évaluation](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)
