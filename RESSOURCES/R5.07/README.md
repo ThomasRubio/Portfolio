@@ -26,7 +26,7 @@ Elle aide à développer une stratégie d’insertion ou de poursuite d’étude
 
 ## 📖 Contenus abordés
 
-🔹 1. Connaissance de soi & posture professionnelle
+🔹 **1. Connaissance de soi & posture professionnelle**
 
 - Exploitation des retours de stage
 
@@ -34,17 +34,17 @@ Elle aide à développer une stratégie d’insertion ou de poursuite d’étude
 
 - Bilan des compétences
 
-🔹 2. Élaboration du plan de carrière
+🔹 **2. Élaboration du plan de carrière**
 
 - Stratégie à court et long terme (emploi, poursuite d’études, VAE, FTLV...)
 
-🔹 3. Préparation à l’insertion professionnelle
+🔹 **3. Préparation à l’insertion professionnelle**
 
 - Mise à jour des outils de communication professionnelle (CV, lettre de motivation, identité numérique)
 
 - Préparation aux différentes formes de recrutement (tests, entretiens, concours...)
 
-🔹 4. Valorisation du parcours et du projet
+🔹 **4. Valorisation du parcours et du projet**
 
 - Analyse de situations professionnelles rencontrées
 
