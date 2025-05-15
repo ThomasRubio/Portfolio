@@ -34,7 +34,7 @@ L’objectif est de dresser une cartographie du SI, d’évaluer ses vulnérabil
 
 ## ⚙️ Prérequis
 
-- **[R5.Cyber.09](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.09/README.md)** : Gestion de projets 3 – Mener un projet professionnel
+- **[R5.Cyber.09](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.09/README.md)** : Architectures sécurisées
 
 ## 🧠 Apprentissages critiques
 
