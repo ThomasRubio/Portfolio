@@ -1,4 +1,4 @@
-# 🛡️ SAE 6.Cyber.01
+# 🛡️ SAE 6.Cyber.01 - Réagir face à une cyber-attaque
 
 **Securim - Une entreprise cyberattaquée !**
 
