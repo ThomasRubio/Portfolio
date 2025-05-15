@@ -66,18 +66,18 @@ Les principaux objectifs sont :
 
 ## 🧠 Apprentissages critiques
 
-- **AC31.02Cyber** : Réaliser la documentation technique de ce projet
-- **AC31.03Cyber** : Réaliser une maquette de démonstration du projet
-- **AC31.04Cyber** : Défendre/argumenter un projet
-- **AC31.05Cyber** : Communiquer avec les acteurs du projet
-- **AC31.06Cyber** : Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais
-- **AC32.05Cyber** : Collaborer en mode projet en français et en anglais
-- **AC33.01Cyber** : Élaborer les spécifications techniques et le cahier des charges d’une application informatique
-- **AC33.02Cyber** : Mettre en place un environnement de travail collaboratif
-- **AC33.03Cyber** : Participer à la formation des utilisateurs
-- **AC33.04Cyber** : Déployer et maintenir une solution informatique
-- **AC33.05Cyber** : S’informer sur les évolutions et les nouveautés technologiques
-- **AC33.06Cyber** : Sécuriser l’environnement numérique d’une application
+- **AC31.02** : Réaliser la documentation technique de ce projet
+- **AC31.03** : Réaliser une maquette de démonstration du projet
+- **AC31.04** : Défendre/argumenter un projet
+- **AC31.05** : Communiquer avec les acteurs du projet
+- **AC31.06** : Gérer le projet et les différentes étapes de sa mise en œuvre en respectant les délais
+- **AC32.05** : Collaborer en mode projet en français et en anglais
+- **AC33.01** : Élaborer les spécifications techniques et le cahier des charges d’une application informatique
+- **AC33.02** : Mettre en place un environnement de travail collaboratif
+- **AC33.03** : Participer à la formation des utilisateurs
+- **AC33.04** : Déployer et maintenir une solution informatique
+- **AC33.05** : S’informer sur les évolutions et les nouveautés technologiques
+- **AC33.06** : Sécuriser l’environnement numérique d’une application
  
 ## 📚 Ressources mobilisées et combinées
 
