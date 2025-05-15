@@ -45,6 +45,28 @@
 
 - Déploiement d’un système de sécurité cohérent, supervisé et réactif
 
+## 🧠 Apprentissages critiques
+
+- **AC34.01Cyber** : Participer activement à une analyse de risque pour définir une politique de sécurité pour une petite structure
+- **AC34.02Cyber** : Mettre en œuvre des outils avancés de sécurisation d’une infrastructure du réseau
+- **AC34.03Cyber** : Sécuriser les systèmes d’exploitation
+- **AC34.04Cyber** : Proposer une architecture sécurisée de système d’information pour une petite structure
+- **AC35.01Cyber** : Surveiller l’activité du système d’information
+- **AC35.02Cyber** : Appliquer une méthodologie de tests de pénétration
+- **AC35.03Cyber** : Réagir face à un incident de sécurité
+- **AC35.04Cyber** : Administrer les outils de surveillance du système d’information
+
+## 📚 Ressources mobilisées et combinées
+
+- **[R5.05](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.05/README.md)** : Anglais : Insertion professionnelle 1
+- **[R5.06](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.06/README.md)** : Expression-Culture-Communication professionnelles : S’intégrer dans une organisation
+- **[R5.07](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.07/README.md)** : Projet Personnel et Professionnel
+- **[R5.08](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.08/README.md)** : Gestion de projets 3 : Mener un projet professionnel
+- **[R5.Cyber.09](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.09/README.md)** : Architectures sécurisées
+- **[R5.Cyber.10](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.10/README.md)** : Audits de sécurité
+- **[R5.Cyber.11](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.11/README.md)** : Supervision de la sécurité
+- **[R5.Cyber.12](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.12/README.md)** : Normes, standards et analyse de risques
+
 ## ← Retour
 
 [📚 SAE - Situations D'appentissage et d'Évaluation](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)
