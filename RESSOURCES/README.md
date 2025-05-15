@@ -8,42 +8,42 @@ ainsi qu’en compréhension des enjeux économiques, organisationnels et régle
 
 ## 📂 Contenu
 
-- **Semestre 5**
+**Semestre 5**
 
-  - [R5.01 – WiFi avancé](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.01/README.md).
+- [R5.01 – WiFi avancé](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.01/README.md).
     
-  - [R5.02 – Supervision des réseaux](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.02/README.md).
+- [R5.02 – Supervision des réseaux](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.02/README.md).
     
-  - [R5.03 –  Ingénierie de systèmes télécoms](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.03/README.md).
+- [R5.03 –  Ingénierie de systèmes télécoms](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.03/README.md).
     
-  - [R5.04 – Cycle de vie d’un projet informatique](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.04/README.md).
+- [R5.04 – Cycle de vie d’un projet informatique](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.04/README.md).
     
-  - [R5.05 – Anglais : Insertion professionnelle 1](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.05/README.md).
+- [R5.05 – Anglais : Insertion professionnelle 1](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.05/README.md).
     
-  - [R5.06 –  Expression-Culture-Communication professionnelles : S’intégrer dans une organisation](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.06/README.md).
+- [R5.06 –  Expression-Culture-Communication professionnelles : S’intégrer dans une organisation](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.06/README.md).
     
-  - [R5.07 – Projet Personnel et Professionnel](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.07/README.md).
+- [R5.07 – Projet Personnel et Professionnel](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.07/README.md).
     
-  - [R5.08 – Gestion de projets 3 : Mener un projet professionnel](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.08/README.md).
+- [R5.08 – Gestion de projets 3 : Mener un projet professionnel](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.08/README.md).
     
-  - [R5.Cyber09 – Architectures sécurisées](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber09/README.md).
+- [R5.Cyber09 – Architectures sécurisées](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.09/README.md).
     
-  - [R5.Cyber10 – Audits de sécurité](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber10/README.md).
+- [R5.Cyber10 – Audits de sécurité](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.10/README.md).
     
-  - [R5.Cyber11 – Supervision de la sécurité](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber11/README.md).
+- [R5.Cyber11 – Supervision de la sécurité](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.11/README.md).
     
-  - [R5.Cyber12 – Normes, standards et analyse de risques](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber12/README.md).
+- [R5.Cyber12 – Normes, standards et analyse de risques](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R5.Cyber.12/README.md).
     
 
-- **Semestre 6**
+**Semestre 6**
 
-  - [R6.01 – Anglais : Insertion professionnelle 2](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.01/README.md).
+- [R6.01 – Anglais : Insertion professionnelle 2](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.01/README.md).
 
-  - [R6.02 – Expression-Culture-Communication : Communiquer en tant que futur cadre intermédiaire](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.02/README.md).
+- [R6.02 – Expression-Culture-Communication : Communiquer en tant que futur cadre intermédiaire](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.02/README.md).
 
-  - [R6.03 – Connaissance de l’entreprise](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.03/README.md).
+- [R6.03 – Connaissance de l’entreprise](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.03/README.md).
 
-  - [R6.Cyber.04 – Réponse à incident](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.Cyber04/README.md).
+- [R6.Cyber.04 – Réponse à incident](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.Cyber.04/README.md).
 
 ## 🎯 Objectif
 
