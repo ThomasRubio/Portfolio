@@ -1,0 +1,91 @@
+1 - Fonctions utilitaires :
+Validation des emails
+Évaluation de la force des mots de passe
+Conversion des priorités en chaînes de caractères
+Prédiction des priorités
+
+2 - Interactions avec la base de données :
+Connexion à la base de données
+Envoi d'emails
+
+3 - Composants de l'interface utilisateur :
+Initialisation des fenêtres (écran d'accueil, fenêtre de connexion, fenêtre d'inscription, application principale)
+Interactions avec les widgets (boutons, champs de texte, etc.)
+
+4 - Interactions spécifiques de l'application :
+
+Sauvegarde des tâches
+Sauvegarde des groupes
+Sauvegarde des dossiers
+
+5 - Gestion des utilisateurs :
+Inscription des utilisateurs
+Connexion des utilisateurs
+Vérification OTP
+Envoi d'invitations
+Gestion des rôles des membres
+
+6 - Fonctionnalités de l'application :
+Génération de rapports
+Téléchargement de rapports en PDF
+Importation de calendriers Google
+Exportation de calendriers Google
+
+7 - Thèmes et styles :
+Application du thème sombre
+Application du thème clair
+Changement de thème en cours d'utilisation
+
+8 - Assistance vocale :
+Démarrage de l'assistance vocale
+Arrêt de l'assistance vocale
+Lecture des tâches par l'assistant vocal
+
+9 - Gestion des étiquettes :
+Ajout d'étiquettes
+Modification d'étiquettes
+Suppression d'étiquettes
+Filtrage des tâches par étiquette
+
+10 - Gestion des sous-tâches :
+Ajout de sous-tâches
+Modification de sous-tâches
+Suppression de sous-tâches
+
+11 - Gestion des commentaires :
+Ajout de commentaires
+Affichage des commentaires
+
+12 - Sélection de groupe :
+Chargement des groupes disponibles
+Sélection d'un groupe
+
+13 - Gestion des invitations :
+Chargement des invitations
+Acceptation des invitations
+Refus des invitations
+
+14 - Gestion des dossiers :
+Ajout de dossiers
+Modification de dossiers
+Suppression de dossiers
+
+15 - Gestion des tâches :
+Ajout de tâches
+Modification de tâches
+Suppression de tâches
+Filtrage des tâches par statut
+Filtrage des tâches par étiquette
+Recherche de tâches
+Pagination des tâches
+
+16 - Gestion des membres :
+Chargement des membres
+Modification des rôles des membres
+Suppression des membres
+
+17 - Gestion des fenêtres :
+Initialisation de l'écran d'accueil
+Initialisation de la fenêtre de connexion
+Initialisation de la fenêtre d'inscription
+Initialisation de l'application principale
