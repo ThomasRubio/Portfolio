@@ -53,6 +53,20 @@ Nous avons ensuite adopté une posture défensive visant à détecter et analyse
 - 📊 Analyse de logs et corrélation d’événements
 - 📚 Rédaction technique et restitution orale
 
+## 🧠 Apprentissages critiques
+
+- **AC34.02Cyber** : Mettre en œuvre des outils avancés de sécurisation d’une infrastructure réseau
+- **AC34.03Cyber** : Sécuriser les systèmes d’exploitation
+- **AC35.01Cyber** : Surveiller l’activité du système d’information
+- **AC35.03Cyber** : Réagir face à un incident de sécurité
+- **AC35.04Cyber** : Administrer les outils de surveillance du système d’information
+
+## 📚 Ressources mobilisées et combinées
+
+- **[R6.01](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.01/README.md)** : Anglais – Insertion professionnelle 2
+- **[R6.02](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.02/README.md)** : Expression & communication – Communiquer en tant que futur cadre intermédiaire
+- **[R6.Cyber.04](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/R6.Cyber.04/README.md)** : Réponse à incident
+
 ## ← Retour
 
 [📚 SAE - Situations D'appentissage et d'Évaluation](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)
