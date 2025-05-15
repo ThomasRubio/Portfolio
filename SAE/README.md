@@ -5,31 +5,32 @@ Bienvenue dans cette section dédiée à mes SAE réalisées dans le cadre de ma
 Vous trouverez ici différents projets pédagoqiques développés au fil de mes semestres, illustrant mes compétences en réseaux, systèmes, programmation, cybersécurité et gestion de projet.
 
 ## 📂 Contenu
-- **Semestre 3**
 
-[SAE 3.01 : Mettre en oeuvre un système de transmission](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.01/README.md).
+**Semestre 3**
 
-[SAE 3.02 : Développer des applications communicantes](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.02/README.md).
+- [SAE 3.01 : Mettre en oeuvre un système de transmission](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.01/README.md).
 
-[SAE 3.Cyber.03 : Concevoir un réseau informatique sécurisé multi-sites](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.03/README.md).
+- [SAE 3.02 : Développer des applications communicantes](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.02/README.md).
 
-[SAE 3.Cyber.04 :  Découvrir le pentesting](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.04/README.md).
+- [SAE 3.Cyber.03 : Concevoir un réseau informatique sécurisé multi-sites](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.03/README.md).
 
-- **Semestre 4**
+- [SAE 3.Cyber.04 :  Découvrir le pentesting](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_3.Cyber.04/README.md).
 
-[SAE 4.Cyber.01 : Sécuriser un système d’information](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_4.Cyber.01/README.md).
+**Semestre 4**
 
-- **Semestre 5**
+- [SAE 4.Cyber.01 : Sécuriser un système d’information](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_4.Cyber.01/README.md).
 
-[SAE 5.01 : Concevoir, réaliser et présenter une solution technique](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/README.md).
+**Semestre 5**
 
-[SAE 5.02 : Piloter un projet informatique](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/README.md)
+- [SAE 5.01 : Concevoir, réaliser et présenter une solution technique](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/README.md).
 
-[SAE 5.Cyber.03 : Assurer la sécurisation et la supervision avancées d'un système d'information](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.Cyber.03/README.md).
+- [SAE 5.02 : Piloter un projet informatique](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.02/README.md)
 
-- **Semestre 6**
+- [SAE 5.Cyber.03 : Assurer la sécurisation et la supervision avancées d'un système d'information](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.Cyber.03/README.md).
 
-[SAE 6.Cyber.01 : Réagir face à une cyber-attaque](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_6.Cyber.01/README.md).
+**Semestre 6**
+
+- [SAE 6.Cyber.01 : Réagir face à une cyber-attaque](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_6.Cyber.01/README.md).
 
 ## 🎯 Objectif
 
