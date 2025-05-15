@@ -53,46 +53,48 @@ Le système peut également être réveillé à distance par un message depuis u
 
 Envoyer des coordonnées en MQTT et les visualiser sur une carte via une page web (hors TTN).
 
-  - **Étape 1** : Envoi des coordonnées de géolocalisation via Wi-Fi depuis l’End Device vers MQTT.
+- **[Étape 1](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape1)** : Envoi des coordonnées de géolocalisation via Wi-Fi depuis l’End Device vers MQTT.
   
-  - **Étape 2** : Visualisation de la position du véhicule via un lien http (Node-RED).
+- **[Étape 2](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape2)** : Visualisation de la position du véhicule via un lien http (Node-RED).
 
 **Validation 2** :
 
 Créer sur TTN une Application et une Gateway.
 
+- **[Étape 3](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape3)** : Créer une Application liée à votre End-Device et voir les messages transiter depuis une Gateway.
+
+- **[Étape 4](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape4)** : Créer une Gateway et voir les messages dans l’Application TTN.
+
 **Validation 3** :
 
-- Créer une Application liée à l’End Device.
+Formatage des données côté TTN
 
-- Voir les messages circuler via une Gateway (TTIG).
-
-- Respecter les règles de transmission (ex : Airtime calculator).
-
-- **Étape 4** : Créer une Gateway et voir les messages dans l’Application TTN.
+- **[Étape 5](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape5)** : Récupérer le Payload sur TTN, le formater en JSON (*uplink* → *Payload formatters*).
 
 **Validation 4** :
 
-- **Étape 5** : Récupérer le Payload sur TTN, le formater en JSON (*uplink* → *Payload formatters*).
-
-**Validation 5** :
+Visualisation des positions du véhicule sur la carte
 
 - **Étape 6** : Utiliser le broker MQTT TTN dans *Integrations*.
 
 - **Étape 7** : Intégrer les messages MQTT dans Node-RED pour afficher la position.
 
-**Validation 6** :
+**Validation 5** :
 
-Connexion GNSS et LoRaWan au démarrage du véhicule.
-
-- Par défaut, le Node est en basse consommation.
+Visualisation des positions du véhicule - Version optimisé
 
 - **Étape 8** : L’accéléromètre active les modules et envoie les données via LoRa.
+
+**Validation 6** :
+
+Connexion au GNSS et LoRaWan lorsque le véhicule démarre
+
+- **[Étape 9](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape9)** : Utiliser l'accéléromètre et le mode <<*deep sleep*>>
 
 **Validation 7** :
 
 Arrêt du suivi sur demande utilisateur (depuis la page web) et retour en mode basse consommation.
 
-- **Étape 10** : Réception d’un message *downlink* (TTN → Payload formatter).
+- **[Étape 10](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/SAE_5.01/etape10)** : Réception d’un message *downlink* (TTN → Payload formatter).
 
-- **Étape 11** : Traitement de la demande dans le Node.
+- **Étape 11** : Utiliser un topic descendant par appui d'un bouton depuis la page web
