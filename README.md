@@ -12,6 +12,6 @@ deux versions disponibles (français et anglais) pour présenter mon parcours, m
 
 **[Mes SAE](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)** : projets techniques réalisés à l’IUT dans des contextes proches du milieu professionnel.
 
-Mes ressources : documents et outils utiles collectés ou produits pendant ma formation.
+**[Mes ressources](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/README.md)** : documents et outils utiles collectés ou produits pendant ma formation.
 
 Ce portfolio reflète mon engagement et ma progression, et constitue un support pour mes démarches professionnelles.
