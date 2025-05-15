@@ -5,13 +5,13 @@ Il met en valeur les compétences que j’ai développées à travers des projet
 
 Il se compose de plusieurs rubriques :
 
-**[Mon CV](https://github.com/ThomasRubio/Portfolio/blob/main/CV/README.md)** :
+- **[Mon CV](https://github.com/ThomasRubio/Portfolio/blob/main/CV/README.md)** :
 deux versions disponibles (français et anglais) pour présenter mon parcours, ma formation et mes compétences.
 
-**[Mon stage](https://github.com/ThomasRubio/Portfolio/blob/main/STAGE/README.md)** : une immersion professionnelle concrète qui m’a permis d’appliquer mes connaissances sur le terrain.
+- **[Mon stage](https://github.com/ThomasRubio/Portfolio/blob/main/STAGE/README.md)** : une immersion professionnelle concrète qui m’a permis d’appliquer mes connaissances sur le terrain.
 
-**[Mes SAE](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)** : projets techniques réalisés à l’IUT dans des contextes proches du milieu professionnel.
+- **[Mes SAE](https://github.com/ThomasRubio/Portfolio/blob/main/SAE/README.md)** : projets techniques réalisés à l’IUT dans des contextes proches du milieu professionnel.
 
-**[Mes ressources](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/README.md)** : documents et outils utiles collectés ou produits pendant ma formation.
+- **[Mes ressources](https://github.com/ThomasRubio/Portfolio/blob/main/RESSOURCES/README.md)** : documents et outils utiles collectés ou produits pendant ma formation.
 
 Ce portfolio reflète mon engagement et ma progression, et constitue un support pour mes démarches professionnelles.
